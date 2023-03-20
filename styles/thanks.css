@@ -1,0 +1,152 @@
+.title-text{
+  color:black;
+  font-weight: bold;
+  cursor:pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 15px;
+  opacity: 0;
+  animation: slideRight .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+  .home{
+    color:black;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 650px;
+  }
+  .about-us,
+  .contacts,
+  .events,
+  .donations{
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .donations{
+    margin-left: 25px;
+    margin-right: 5px;
+    background-color:rgb(31, 131, 208);
+    border-radius: 50px;
+    padding: 10px;
+
+  }
+  .fa {
+  padding: 7px;
+  font-size: 20px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.header{
+  display: flex;
+  background: linear-gradient(rgb(67,124,205), rgb(60,214,200));
+  padding-bottom: 15px;
+  top: 0;
+  width: 100%;
+  position: fixed;    
+  opacity: 0.8;
+  text-decoration: none;
+}
+.navbar a{
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  animation: slideLeft .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+.logo{
+    padding-left: 30px;
+    width: 35px;
+    padding-top: 5px;
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.footer{
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0;
+  animation: slideTop 2s ease forwards;
+  }
+.footer2{
+  opacity: 0;
+  animation: slideTop 3s ease forwards;
+}
+.body{
+  background: linear-gradient(rgb(67,124,205), rgb(60,214,200));
+    margin: 0;
+}
+.join-us{
+  color:  lightblue;
+  font-size: 22px;
+  cursor: pointer;
+}
+.thanks{
+  text-align: center;
+  font-size: 70px;
+  margin-top: 250px;
+  margin-bottom: 318px;
+}
+@keyframes slideLeft{
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideRight{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideTop{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
